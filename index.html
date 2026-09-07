@@ -88,6 +88,7 @@
   .price-row .amount small{font-size:36px}
   .price-row .unit{font-size:18px;font-weight:500;opacity:.95}
   .price-note{margin:10px 0 0;font-size:14px;opacity:.9}
+  .spec-tag{display:inline-block;margin:12px 0 0;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:5px 14px;font-size:13px;font-weight:700;color:var(--lime)}
   .ship{
     margin-top:20px;background:var(--green-deep);border-radius:var(--radius);padding:16px 18px;
   }
@@ -269,11 +270,12 @@
   <section class="price-band" id="price">
     <div class="eyebrow">구성 및 가격</div>
     <div class="price-row">
-      <span class="unit">샤인머스켓 2kg 1박스 <b style="color:var(--lime)">(약 세 송이)</b></span>
+      <span class="unit">샤인머스켓 2kg 1박스 <b style="color:var(--lime)">(세 송이)</b></span>
     </div>
     <div class="price-row">
       <span class="amount num">12,000<small>원</small></span>
     </div>
+    <p class="spec-tag">당도 16브릭스 이상</p>
     <p class="price-note">주문 확인 후 <b>당일 수확 → 우체국 택배 발송</b></p>
 
     <div class="ship">
@@ -293,7 +295,7 @@
     <p class="sec-sub">박스 수를 고르면 택배비까지 합쳐서 계산해 드려요.</p>
     <div class="calc">
       <div class="qty">
-        <div class="qty-label">주문 수량<small>2kg(약 세 송이) 1박스 = 12,000원</small></div>
+        <div class="qty-label">주문 수량<small>2kg(세 송이) 1박스 = 12,000원</small></div>
         <div class="stepper" role="group" aria-label="수량 선택">
           <button type="button" id="minus" aria-label="수량 줄이기">−</button>
           <output id="qtyOut" for="minus plus" aria-live="polite">1</output>
@@ -395,7 +397,8 @@
       <li><b>우체국 택배로 보내드립니다.</b>도서산간 지역을 제외한 전국 어디든 배송 가능합니다.</li>
       <li><b>2박스 이상은 2박스씩 묶어서 보내드려요.</b>포도가 눌리지 않도록 두 박스를 한 덩어리로 단단히 묶습니다.</li>
       <li><b>겉포장이 조금 투박할 수 있습니다.</b>운송 중 충격으로 알이 떨어지는 것을 막기 위해 겉을 두껍게 감싸다 보니 그렇습니다. 안의 포도는 한 송이씩 완충 포장되어 있으니 안심하세요.</li>
-      <li><b>1박스는 2kg, 약 세 송이입니다.</b>송이 크기에 따라 두 송이 반에서 세 송이 반까지 담길 수 있고, 중량은 2kg을 맞춰 보내드립니다.</li>
+      <li><b>1박스는 2kg, 세 송이입니다.</b>한 박스에 세 송이를 담아 중량 2kg을 맞춰 보내드립니다.</li>
+      <li><b>당도 16브릭스 이상만 보내드립니다.</b>당도계로 확인해 기준을 넘긴 포도만 골라 수확합니다.</li>
     </ul>
   </section>
 
@@ -405,7 +408,7 @@
     <p class="sec-sub">네 단계 모두 부모님 손을 거칩니다.</p>
     <div class="process">
       <figure><div class="shot"><img src="img/step1.jpg" alt="포도밭에서 직접 재배" loading="lazy"><span class="n">1</span></div><figcaption><b>직접 재배</b>자연을 담아 정성껏 키웁니다.</figcaption></figure>
-      <figure><div class="shot"><img src="img/step2.jpg" alt="당도계로 당도 확인" loading="lazy"><span class="n">2</span></div><figcaption><b>당도 체크</b>하나하나 당도를 확인해 맛있게 익은 포도만 수확.</figcaption></figure>
+      <figure><div class="shot"><img src="img/step2.jpg" alt="당도계로 당도 확인" loading="lazy"><span class="n">2</span></div><figcaption><b>당도 체크</b>당도계로 확인해 16브릭스 이상인 포도만 수확.</figcaption></figure>
       <figure><div class="shot"><img src="img/step3.jpg" alt="수확한 포도 선별" loading="lazy"><span class="n">3</span></div><figcaption><b>수확 &amp; 선별</b>꼼꼼하게 선별하여 최상의 포도만 골라냅니다.</figcaption></figure>
       <figure><div class="shot"><img src="img/step4.jpg" alt="완충 포장된 샤인머스켓" loading="lazy"><span class="n">4</span></div><figcaption><b>포장</b>파손을 막기 위한 꼼꼼한 포장입니다.</figcaption></figure>
     </div>
@@ -432,7 +435,11 @@
     </details>
     <details>
       <summary>한 박스에 몇 송이 들어가나요?</summary>
-      <p>2kg 기준으로 약 세 송이입니다. 송이 크기에 따라 개수는 조금 달라질 수 있고, 중량은 2kg에 맞춰 보내드립니다.</p>
+      <p>2kg 기준으로 세 송이입니다. 한 박스에 세 송이를 담아 중량 2kg을 맞춰 보내드립니다.</p>
+    </details>
+    <details>
+      <summary>당도는 어느 정도인가요?</summary>
+      <p>당도계로 확인해 16브릭스 이상인 포도만 골라 수확합니다. 기준을 넘기지 못한 포도는 보내드리지 않습니다.</p>
     </details>
     <details>
       <summary>포장이 투박해 보이는데 괜찮나요?</summary>
