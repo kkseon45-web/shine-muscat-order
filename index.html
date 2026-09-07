@@ -168,10 +168,24 @@
   .pay .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .pay .actions .btn{padding:13px;font-size:15px}
 
+  /* ---------- notice ---------- */
+  .notice{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .notice li{
+    background:var(--white);border:1px solid var(--line);border-left:4px solid var(--lime);
+    border-radius:10px;padding:13px 15px;font-size:14px;color:var(--muted);line-height:1.55
+  }
+  .notice li b{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}
+
   /* ---------- process ---------- */
   .process{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 12px}
   .process figure{margin:0}
-  .process img{border-radius:10px;aspect-ratio:1;object-fit:cover;width:100%}
+  .process .shot{position:relative;border-radius:10px;overflow:hidden}
+  .process img{border-radius:10px;aspect-ratio:3/4;object-fit:cover;width:100%}
+  .process .n{
+    position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;
+    background:var(--lime);color:var(--green-deep);font-family:var(--display);font-size:16px;
+    display:grid;place-items:center;box-shadow:0 1px 4px rgba(30,42,30,.3)
+  }
   .process figcaption{margin-top:8px;font-size:13px;color:var(--muted);line-height:1.45}
   .process figcaption b{display:block;color:var(--ink);font-size:15px}
   .gift{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--white)}
@@ -245,21 +259,21 @@
   <section class="price-band" id="price">
     <div class="eyebrow">구성 및 가격</div>
     <div class="price-row">
-      <span class="unit">샤인머스켓 2kg 1박스</span>
+      <span class="unit">샤인머스켓 2kg 1박스 <b style="color:var(--lime)">(약 세 송이)</b></span>
     </div>
     <div class="price-row">
       <span class="amount num">12,000<small>원</small></span>
     </div>
-    <p class="price-note">주문 확인 후 <b>당일 수확 → 택배 발송</b></p>
+    <p class="price-note">주문 확인 후 <b>당일 수확 → 우체국 택배 발송</b></p>
 
     <div class="ship">
-      <h3 class="num">택배비 별도 <span>박스 수에 따라 달라져요</span></h3>
+      <h3 class="num">택배비 별도 <span>우체국 택배 · 박스 수에 따라</span></h3>
       <div class="ship-grid num">
         <div><b>3,000원</b><span>1박스</span></div>
-        <div><b>4,000원</b><span>2박스</span></div>
-        <div><b>5,000원</b><span>4박스</span></div>
+        <div><b>4,000원</b><span>2~3박스</span></div>
+        <div><b>5,000원</b><span>4박스 이상</span></div>
       </div>
-      <p>※ 2박스 이상 주문 시 <strong>배송지가 다르면 택배비가 각각</strong> 발생합니다.</p>
+      <p>※ 2박스 이상이라도 <strong>배송지가 다르면 택배비가 각각</strong> 발생합니다.<br>※ 도서산간 지역을 제외한 <strong>전국 배송 가능</strong>합니다.</p>
     </div>
   </section>
 
@@ -269,7 +283,7 @@
     <p class="sec-sub">박스 수를 고르면 택배비까지 합쳐서 계산해 드려요.</p>
     <div class="calc">
       <div class="qty">
-        <div class="qty-label">주문 수량<small>2kg 1박스 = 12,000원</small></div>
+        <div class="qty-label">주문 수량<small>2kg(약 세 송이) 1박스 = 12,000원</small></div>
         <div class="stepper" role="group" aria-label="수량 선택">
           <button type="button" id="minus" aria-label="수량 줄이기">−</button>
           <output id="qtyOut" for="minus plus" aria-live="polite">1</output>
@@ -363,15 +377,27 @@
     </div>
   </section>
 
+  <!-- ===== SHIPPING NOTICE ===== -->
+  <section class="block" id="shipinfo">
+    <h2 class="sec display">배송 &amp; 포장 안내</h2>
+    <p class="sec-sub">받아보시기 전에 알아두시면 좋아요.</p>
+    <ul class="notice">
+      <li><b>우체국 택배로 보내드립니다.</b>도서산간 지역을 제외한 전국 어디든 배송 가능합니다.</li>
+      <li><b>2박스 이상은 2박스씩 묶어서 보내드려요.</b>포도가 눌리지 않도록 두 박스를 한 덩어리로 단단히 묶습니다.</li>
+      <li><b>겉포장이 조금 투박할 수 있습니다.</b>운송 중 충격으로 알이 떨어지는 것을 막기 위해 겉을 두껍게 감싸다 보니 그렇습니다. 안의 포도는 한 송이씩 완충 포장되어 있으니 안심하세요.</li>
+      <li><b>1박스는 2kg, 약 세 송이입니다.</b>송이 크기에 따라 두 송이 반에서 세 송이 반까지 담길 수 있고, 중량은 2kg을 맞춰 보내드립니다.</li>
+    </ul>
+  </section>
+
   <!-- ===== PROCESS ===== -->
   <section class="block" id="process">
     <h2 class="sec display">생산부터 포장까지, 직접 합니다!</h2>
     <p class="sec-sub">네 단계 모두 부모님 손을 거칩니다.</p>
     <div class="process">
-      <figure><img src="img/step1.jpg" alt="포도밭에서 직접 재배" loading="lazy"><figcaption><b>직접 재배</b>자연을 담아 정성껏 키웁니다.</figcaption></figure>
-      <figure><img src="img/step2.jpg" alt="당도계로 당도 확인" loading="lazy"><figcaption><b>당도 체크</b>하나하나 당도를 확인해 맛있게 익은 포도만 수확.</figcaption></figure>
-      <figure><img src="img/step3.jpg" alt="수확한 포도 선별" loading="lazy"><figcaption><b>수확 &amp; 선별</b>꼼꼼하게 선별하여 최상의 포도만 골라냅니다.</figcaption></figure>
-      <figure><img src="img/step4.jpg" alt="완충 포장된 샤인머스켓" loading="lazy"><figcaption><b>포장</b>파손을 막기 위한 꼼꼼한 포장입니다.</figcaption></figure>
+      <figure><div class="shot"><img src="img/step1.jpg" alt="포도밭에서 직접 재배" loading="lazy"><span class="n">1</span></div><figcaption><b>직접 재배</b>자연을 담아 정성껏 키웁니다.</figcaption></figure>
+      <figure><div class="shot"><img src="img/step2.jpg" alt="당도계로 당도 확인" loading="lazy"><span class="n">2</span></div><figcaption><b>당도 체크</b>하나하나 당도를 확인해 맛있게 익은 포도만 수확.</figcaption></figure>
+      <figure><div class="shot"><img src="img/step3.jpg" alt="수확한 포도 선별" loading="lazy"><span class="n">3</span></div><figcaption><b>수확 &amp; 선별</b>꼼꼼하게 선별하여 최상의 포도만 골라냅니다.</figcaption></figure>
+      <figure><div class="shot"><img src="img/step4.jpg" alt="완충 포장된 샤인머스켓" loading="lazy"><span class="n">4</span></div><figcaption><b>포장</b>파손을 막기 위한 꼼꼼한 포장입니다.</figcaption></figure>
     </div>
     <div class="gift" style="margin-top:18px">
       <img src="img/gift.jpg" alt="접시에 담긴 샤인머스켓" loading="lazy">
@@ -395,8 +421,16 @@
       <p>네, 가능해요. 다만 배송지가 다르면 택배비가 각각 발생합니다. 주소를 문자에 모두 적어 주시면 택배비를 안내드릴게요.</p>
     </details>
     <details>
-      <summary>5박스 이상도 주문되나요?</summary>
-      <p>수확 상황에 따라 가능해요. 전화나 문자로 먼저 문의해 주시면 수량과 택배비를 안내드립니다.</p>
+      <summary>한 박스에 몇 송이 들어가나요?</summary>
+      <p>2kg 기준으로 약 세 송이입니다. 송이 크기에 따라 개수는 조금 달라질 수 있고, 중량은 2kg에 맞춰 보내드립니다.</p>
+    </details>
+    <details>
+      <summary>포장이 투박해 보이는데 괜찮나요?</summary>
+      <p>운송 중 충격으로 알이 떨어지지 않도록 겉을 두껍게 감싸서 그렇습니다. 2박스 이상은 두 박스씩 묶어서 보내드리고, 안쪽은 한 송이씩 완충재로 감싸져 있습니다.</p>
+    </details>
+    <details>
+      <summary>제주도나 섬 지역도 배송되나요?</summary>
+      <p>도서산간 지역은 배송이 어렵습니다. 그 외 전국은 우체국 택배로 보내드립니다.</p>
     </details>
   </section>
 
@@ -444,8 +478,8 @@
     $('barTotal').textContent = won(total);
     $('minus').disabled = qty <= 1;
     $('plus').disabled = qty >= MAX_QTY;
-    $('calcHint').textContent = qty >= 5
-      ? '5박스 이상은 택배비가 달라질 수 있어요. 문자로 안내드립니다.'
+    $('calcHint').textContent = qty >= 2
+      ? qty + '박스는 2박스씩 묶어서 포장해 보내드려요. 배송지가 여러 곳이면 택배비가 각각 붙어요.'
       : '배송지 1곳 기준입니다. 배송지가 여러 곳이면 택배비가 각각 붙어요.';
     renderPreview();
   }
