@@ -27,7 +27,7 @@ git push -u origin main
 `index.html` 맨 아래 `<script>` 안 "설정" 블록만 고치면 계산기와 주문 문자가 같이 바뀝니다.
 
 ```js
-var PHONE   = '010-4946-3194';   // 주문 문자·전화 받는 번호
+var PHONE   = '010-3517-3194';   // 주문 문자·전화 받는 번호
 var PRICE   = 12000;             // 1박스 가격
 function shippingFee(q){         // 택배비 규칙
   if(q >= 4) return 5000;
