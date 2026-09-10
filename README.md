@@ -1,4 +1,4 @@
-# 부모님표 샤인머스켓 주문 페이지
+# 부모님표 샤인머스캣 주문 페이지
 
 `index.html` 하나와 `img/` 폴더로 이루어진 정적 페이지입니다. 서버 없이 GitHub Pages에 그대로 올리면 됩니다.
 
@@ -14,7 +14,7 @@
 
 ```bash
 cd ~/shine-muscat
-git init && git add . && git commit -m "샤인머스켓 주문 페이지"
+git init && git add . && git commit -m "샤인머스캣 주문 페이지"
 git branch -M main
 git remote add origin https://github.com/<깃허브아이디>/shine-muscat.git
 git push -u origin main
