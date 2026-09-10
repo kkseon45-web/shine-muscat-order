@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>경산 자인 고당도 샤인머스켓</title>
+<meta name="description" content="경북 경산 자인 직송 샤인머스켓. 4kg 실속 27,000원 무료배송, 2kg 가정용 12,000원. 주문 확인 후 당일 수확해 우체국 택배로 보내드립니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kkseon45-web.github.io/shine-muscat-order/company/">
+<meta property="og:site_name" content="경산 자인 고당도 샤인머스켓">
+<meta property="og:title" content="경산 자인 고당도 샤인머스켓">
+<meta property="og:description" content="4kg 실속 27,000원 무료배송 · 2kg 가정용 12,000원 · 주문 확인 후 당일 수확해 우체국 택배 발송">
+<meta property="og:image" content="https://kkseon45-web.github.io/shine-muscat-order/img/og-company.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="경산 자인 고당도 샤인머스켓 2kg 12,000원">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="경산 자인 고당도 샤인머스켓">
+<meta name="twitter:description" content="4kg 실속 27,000원 무료배송 · 2kg 가정용 12,000원 · 주문 확인 후 당일 수확해 우체국 택배 발송">
+<meta name="twitter:image" content="https://kkseon45-web.github.io/shine-muscat-order/img/og-company.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --cream:#FBFAF1;
+    --cream-2:#F1F0E2;
+    --line:#DCDBC8;
+    --ink:#1E2A1E;
+    --muted:#6A745F;
+    --green:#2E6B39;
+    --green-deep:#22512B;
+    --lime:#BFD95C;
+    --lime-soft:#EEF5D2;
+    --price:#1E5A2A;
+    --white:#FFFFFF;
+    --danger:#B4452A;
+    --display:'Do Hyeon','Noto Sans KR',system-ui,sans-serif;
+    --body:'Noto Sans KR',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+    --radius:14px;
+    --bar-h:76px;
+  }
+  *{box-sizing:border-box}
+  html{color-scheme:light}
+  body{
+    margin:0;background:var(--cream-2);color:var(--ink);
+    font-family:var(--body);font-size:16px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:calc(var(--bar-h) + env(safe-area-inset-bottom));
+  }
+  img{max-width:100%;display:block}
+  button,input,textarea,select{font:inherit;color:inherit}
+  a{color:var(--green)}
+  .page{max-width:520px;margin:0 auto;background:var(--cream);min-height:100vh;box-shadow:0 0 0 1px var(--line)}
+  .display{font-family:var(--display);font-weight:400;letter-spacing:-.01em;line-height:1.1}
+  .num{font-variant-numeric:tabular-nums}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:700}
+
+  /* ---------- hero ---------- */
+  .hero{padding:22px 20px 0}
+  .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .hero-kicker{color:var(--green);font-weight:500;font-size:14px;margin:0}
+  .hero h1{margin:6px 0 0;font-size:40px;color:var(--ink);text-wrap:balance}
+  .hero h1 strong{display:block;color:var(--green);font-size:56px;font-weight:400;line-height:1}
+  .hero p.lead{margin:10px 0 0;color:var(--muted);font-size:14px;max-width:34ch}
+  .badge-round{
+    flex:none;width:72px;height:72px;border-radius:50%;border:2px solid var(--green);
+    display:grid;place-items:center;text-align:center;color:var(--green);
+    font-family:var(--display);font-size:14px;line-height:1.15;background:var(--white)
+  }
+  .hero-img{margin-top:18px;position:relative;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden}
+  .hero-img img{width:100%;height:auto;aspect-ratio:1046/515;object-fit:cover}
+  .hero-img .chip{
+    position:absolute;bottom:14px;left:14px;background:var(--white);color:var(--green);
+    padding:6px 12px;border-radius:999px;font-weight:700;font-size:13px;box-shadow:0 2px 8px rgba(30,42,30,.15)
+  }
+  .hero-img .quote{
+    position:absolute;bottom:14px;right:14px;background:var(--white);color:var(--ink);
+    padding:8px 14px;border-radius:12px;font-size:13px;font-weight:500;line-height:1.35;text-align:center;
+    box-shadow:0 2px 8px rgba(30,42,30,.15)
+  }
+
+  /* ---------- price ---------- */
+  .price-band{background:var(--green);color:var(--white);padding:26px 20px 28px}
+  .price-band .eyebrow{color:var(--lime)}
+  .price-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .price-row .amount{font-family:var(--display);font-size:72px;line-height:1;letter-spacing:-.02em}
+  .price-row .amount small{font-size:36px}
+  .price-row .unit{font-size:18px;font-weight:500;opacity:.95}
+  .price-note{margin:10px 0 0;font-size:14px;opacity:.9}
+  .spec-tag{display:inline-block;margin:12px 0 0;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:5px 14px;font-size:13px;font-weight:700;color:var(--lime)}
+  .prod-list{display:grid;gap:12px;margin-top:8px}
+  .prod{position:relative;background:var(--green-deep);border-radius:var(--radius);padding:15px 16px}
+  .prod.reco{background:#183d1f;box-shadow:0 0 0 2px var(--lime) inset}
+  .prod-tag{position:absolute;top:-10px;left:14px;background:var(--lime);color:var(--green-deep);font-family:var(--display);font-size:12px;padding:2px 11px;border-radius:999px}
+  .prod-name{font-size:15px;font-weight:700}
+  .prod-name small{font-weight:400;opacity:.82;font-size:13px;margin-left:5px}
+  .prod-price{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-top:5px}
+  .prod-price .amount{font-family:var(--display);font-size:36px;line-height:1;letter-spacing:-.02em}
+  .prod-price .amount small{font-size:19px}
+  .prod-price .free{background:var(--lime);color:var(--green-deep);font-weight:700;font-size:12px;padding:3px 10px;border-radius:999px}
+  .prod-price .plus-ship{font-size:13px;opacity:.86}
+  .sum .row[hidden]{display:none}
+  .qty + .qty{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+  .ship{
+    margin-top:20px;background:var(--green-deep);border-radius:var(--radius);padding:16px 18px;
+  }
+  .ship h3{margin:0;font-family:var(--display);font-size:22px;letter-spacing:0;display:flex;align-items:baseline;gap:8px}
+  .ship h3 span{font-size:14px;font-family:var(--body);font-weight:500;opacity:.85}
+  .ship-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+  .ship-grid div{background:rgba(255,255,255,.08);border-radius:10px;padding:10px 8px;text-align:center}
+  .ship-grid b{display:block;font-family:var(--display);font-size:26px;line-height:1.1;font-weight:400}
+  .ship-grid span{font-size:13px;opacity:.9}
+  .ship p{margin:12px 0 0;font-size:13px;line-height:1.5;opacity:.92}
+  .ship p strong{color:var(--lime);font-weight:700}
+
+  /* ---------- sections ---------- */
+  section.block{padding:26px 20px}
+  section.block + section.block{border-top:1px solid var(--line)}
+  h2.sec{margin:0 0 4px;font-size:26px;color:var(--ink)}
+  .sec-sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+
+  /* ---------- calculator ---------- */
+  .calc{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+  .qty{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .qty-label{font-weight:700}
+  .qty-label small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+  .stepper{display:flex;align-items:center;border:1.5px solid var(--green);border-radius:999px;overflow:hidden}
+  .stepper button{
+    width:48px;height:48px;border:0;background:var(--white);color:var(--green);
+    font-size:26px;line-height:1;cursor:pointer
+  }
+  .stepper button:active{background:var(--lime-soft)}
+  .stepper output{width:64px;text-align:center;font-family:var(--display);font-size:28px;color:var(--ink)}
+  .sum{margin-top:16px;border-top:1px dashed var(--line);padding-top:12px;display:grid;gap:6px}
+  .sum .row{display:flex;justify-content:space-between;font-size:15px}
+  .sum .row span:first-child{color:var(--muted)}
+  .sum .total{display:flex;justify-content:space-between;align-items:baseline;margin-top:4px;padding-top:10px;border-top:1px solid var(--line)}
+  .sum .total b{font-family:var(--display);font-size:40px;color:var(--price);font-weight:400;line-height:1}
+  .sum .total b small{font-size:22px}
+  .hint{margin:10px 0 0;font-size:13px;color:var(--muted)}
+  .hint.warn{color:var(--danger)}
+
+  /* ---------- order form ---------- */
+  .form{display:grid;gap:14px}
+  .field label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+  .field label em{font-style:normal;color:var(--danger);margin-left:3px}
+  .field input,.field textarea{
+    width:100%;border:1.5px solid var(--line);border-radius:10px;background:var(--white);
+    padding:13px 14px;font-size:16px;outline:none;transition:border-color .15s
+  }
+  .field input:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--lime-soft)}
+  .field.invalid input,.field.invalid textarea{border-color:var(--danger)}
+  .field textarea{min-height:64px;resize:vertical}
+  .field .help{font-size:12px;color:var(--muted);margin-top:5px}
+  .btn{
+    display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+    border:0;border-radius:12px;padding:16px;font-size:17px;font-weight:700;cursor:pointer;
+    text-decoration:none;transition:transform .08s,background .15s
+  }
+  .btn:active{transform:scale(.99)}
+  .btn-primary{background:var(--green);color:var(--white)}
+  .btn-primary:hover{background:var(--green-deep)}
+  .btn-secondary{background:var(--white);color:var(--green);border:1.5px solid var(--green)}
+  .btn-ghost{background:var(--lime-soft);color:var(--green-deep)}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .preview{
+    background:var(--cream-2);border-radius:10px;padding:14px;font-size:14px;white-space:pre-wrap;
+    line-height:1.55;border:1px dashed var(--line);color:var(--ink)
+  }
+  .preview-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .preview-head span{font-size:13px;font-weight:700;color:var(--muted)}
+  .linkish{background:none;border:0;color:var(--green);font-weight:700;font-size:13px;cursor:pointer;padding:0;text-decoration:underline}
+  .steps-order{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 18px;padding:0;list-style:none;counter-reset:s}
+  .steps-order li{
+    background:var(--white);border:1px solid var(--line);border-radius:10px;padding:12px 10px;font-size:13px;line-height:1.4;
+    counter-increment:s;position:relative
+  }
+  .steps-order li::before{
+    content:counter(s);display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;
+    background:var(--lime);color:var(--green-deep);font-family:var(--display);font-size:14px;margin-bottom:6px
+  }
+  .steps-order li b{display:block;font-size:14px}
+
+  /* ---------- pay ---------- */
+  .pay{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:grid;gap:14px}
+  .pay .kv{display:grid;grid-template-columns:76px 1fr;gap:6px 10px;align-items:baseline;font-size:15px}
+  .pay .kv dt{color:var(--muted);font-size:13px;margin:0}
+  .pay .kv dd{margin:0;font-weight:500}
+  .pay .kv dd.big{font-family:var(--display);font-size:24px;letter-spacing:.01em}
+  .pay .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .pay .actions .btn{padding:13px;font-size:15px}
+
+  /* ---------- notice ---------- */
+  .notice{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .notice li{
+    background:var(--white);border:1px solid var(--line);border-left:4px solid var(--lime);
+    border-radius:10px;padding:13px 15px;font-size:14px;color:var(--muted);line-height:1.55
+  }
+  .notice li b{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}
+
+  /* ---------- process ---------- */
+  .process{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 12px}
+  .process figure{margin:0}
+  .process .shot{position:relative;border-radius:10px;overflow:hidden}
+  .process img{border-radius:10px;aspect-ratio:5/4;object-fit:cover;object-position:center;width:100%}
+  .process .n{
+    position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;
+    background:var(--lime);color:var(--green-deep);font-family:var(--display);font-size:16px;
+    display:grid;place-items:center;box-shadow:0 1px 4px rgba(30,42,30,.3)
+  }
+  .process figcaption{margin-top:8px;font-size:13px;color:var(--muted);line-height:1.45}
+  .process figcaption b{display:block;color:var(--ink);font-size:15px}
+  .gift{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--white)}
+  .gift img{height:100%;object-fit:cover;aspect-ratio:523/197;min-height:100%}
+  .gift div{padding:16px}
+  .gift p{margin:0;font-weight:700;font-size:15px;line-height:1.45}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .tags span{border:1.5px solid var(--green);color:var(--green);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
+
+  /* ---------- faq ---------- */
+  .faq details{border-top:1px solid var(--line);padding:12px 0}
+  .faq details:last-child{border-bottom:1px solid var(--line)}
+  .faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-family:var(--display);font-size:22px;color:var(--green)}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:8px 0 0;color:var(--muted);font-size:14px}
+
+  footer{background:var(--green);color:var(--white);padding:26px 20px;text-align:center;font-size:14px}
+  footer b{font-family:var(--display);font-weight:400;font-size:18px;display:block;margin-top:4px}
+
+  /* ---------- sticky bar ---------- */
+  .bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:20;
+    background:var(--white);border-top:1px solid var(--line);
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    box-shadow:0 -6px 20px rgba(30,42,30,.08)
+  }
+  .bar-inner{max-width:520px;margin:0 auto;display:flex;align-items:center;gap:12px}
+  .bar-sum{flex:1;min-width:0;line-height:1.2}
+  .bar-sum small{display:block;font-size:12px;color:var(--muted)}
+  .bar-sum b{font-family:var(--display);font-size:26px;color:var(--price);font-weight:400}
+  .bar .btn{width:auto;flex:none;padding:14px 22px}
+
+  .toast{
+    position:fixed;left:50%;bottom:calc(var(--bar-h) + 16px);transform:translateX(-50%) translateY(10px);
+    background:var(--ink);color:var(--white);padding:10px 16px;border-radius:999px;font-size:14px;
+    opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:30;white-space:nowrap
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  :focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media (max-width:360px){
+    .hero h1 strong{font-size:48px}
+    .price-row .amount{font-size:60px}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-top">
+      <div>
+        <p class="hero-kicker">경북 경산 자인 · 정성으로 키워 맛으로 보답합니다.</p>
+        <h1 class="display">부모님이 직접 키운<strong>샤인머스켓</strong>판매합니다!</h1>
+        <p class="lead">한 해 동안 정성껏 키운 샤인머스켓을 재배부터 수확, 선별, 포장까지 모두 직접 하고 있습니다.</p>
+      </div>
+      <div class="badge-round">달콤한<br>자연의<br>선물</div>
+    </div>
+    <div class="hero-img">
+      <img src="../img/hero.jpg" alt="탱글탱글한 샤인머스켓 송이" width="1046" height="515">
+      <span class="chip">탱글탱글한 식감</span>
+      <span class="quote">“신선하고 맛있는 포도로<br>보내드릴게요!”</span>
+    </div>
+  </header>
+
+  <!-- ===== PRICE ===== -->
+  <section class="price-band" id="price">
+    <div class="eyebrow">구성 및 가격</div>
+    <div class="prod-list">
+      <div class="prod reco">
+        <span class="prod-tag">추천</span>
+        <div class="prod-name">4kg 실속 <small>다섯 송이</small></div>
+        <div class="prod-price"><span class="amount num">27,000<small>원</small></span><span class="free">무료배송</span></div>
+      </div>
+      <div class="prod">
+        <div class="prod-name">2kg 가정용 <small>세 송이</small></div>
+        <div class="prod-price"><span class="amount num">12,000<small>원</small></span><span class="plus-ship">＋ 배송비 3,500원</span></div>
+      </div>
+    </div>
+    <p class="spec-tag">당도 16브릭스 이상</p>
+    <p class="price-note">주문 확인 후 <b>당일 수확 → 우체국 택배 발송</b></p>
+
+    <div class="ship">
+      <h3 class="num">배송 안내 <span>우체국 택배</span></h3>
+      <div class="ship-grid num">
+        <div><b>무료</b><span>4kg 박스</span></div>
+        <div><b>3,500원</b><span>2kg 1박스</span></div>
+        <div><b>4,500원~</b><span>2kg 여러 박스</span></div>
+      </div>
+      <p>※ <strong>4kg 박스는 배송비가 포함</strong>되어 있어 무료입니다.<br>※ 2kg를 2박스 이상 담으실 땐 <strong>4kg 박스가 더 저렴</strong>합니다.<br>※ 배송지가 다르면 택배비가 각각 발생합니다. <strong>전국 배송 가능</strong>합니다.</p>
+    </div>
+  </section>
+
+  <!-- ===== CALCULATOR ===== -->
+  <section class="block" id="calc">
+    <h2 class="sec display">얼마 보내면 되나요?</h2>
+    <p class="sec-sub">4kg·2kg 수량을 고르면 입금하실 금액을 계산해 드려요.</p>
+    <div class="calc">
+      <div class="qty">
+        <div class="qty-label">4kg 실속<small>5송이 · 27,000원 · 무료배송</small></div>
+        <div class="stepper" role="group" aria-label="4kg 수량 선택">
+          <button type="button" id="minus4" aria-label="4kg 수량 줄이기">−</button>
+          <output id="qty4" aria-live="polite">1</output>
+          <button type="button" id="plus4" aria-label="4kg 수량 늘리기">+</button>
+        </div>
+      </div>
+      <div class="qty">
+        <div class="qty-label">2kg 가정용<small>3송이 · 12,000원 · 배송비 별도</small></div>
+        <div class="stepper" role="group" aria-label="2kg 수량 선택">
+          <button type="button" id="minus2" aria-label="2kg 수량 줄이기">−</button>
+          <output id="qty2" aria-live="polite">0</output>
+          <button type="button" id="plus2" aria-label="2kg 수량 늘리기">+</button>
+        </div>
+      </div>
+      <div class="sum num">
+        <div class="row" id="row4"><span>4kg 27,000원 × <span id="c4">1</span></span><span id="g4">27,000원</span></div>
+        <div class="row" id="row2" hidden><span>2kg 12,000원 × <span id="c2">0</span></span><span id="g2">0원</span></div>
+        <div class="row" id="rowShip" hidden><span>택배비 (2kg)</span><span id="shipFee">0원</span></div>
+        <div class="total"><span>입금하실 금액</span><b id="total">27,000<small>원</small></b></div>
+      </div>
+      <p class="hint" id="calcHint">4kg 한 박스는 배송비가 포함되어 있어요.</p>
+    </div>
+  </section>
+
+  <!-- ===== ORDER ===== -->
+  <section class="block" id="order">
+    <h2 class="sec display">주문하기</h2>
+    <p class="sec-sub">아래만 적으면 주문 문자가 자동으로 완성됩니다.</p>
+
+    <ol class="steps-order">
+      <li><b>주문서 작성</b>받는 분·주소·연락처</li>
+      <li><b>문자 보내기</b>버튼 한 번이면 끝</li>
+      <li><b>입금</b>확인 후 당일 수확·발송</li>
+    </ol>
+
+    <form class="form" id="orderForm" novalidate>
+      <div class="field" data-key="name">
+        <label for="name">받는 분 성함<em>*</em></label>
+        <input id="name" name="name" autocomplete="name" placeholder="홍길동">
+      </div>
+      <div class="field" data-key="addr">
+        <label for="addr">받는 주소<em>*</em></label>
+        <textarea id="addr" name="addr" autocomplete="street-address" placeholder="도로명 주소와 동·호수 (아파트, 빌라 이름 등)"></textarea>
+      </div>
+      <div class="field" data-key="phone">
+        <label for="phone">받는 분 연락처<em>*</em></label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000">
+      </div>
+      <div class="field" data-key="payer">
+        <label for="payer">입금자명<em>*</em></label>
+        <input id="payer" name="payer" placeholder="입금하실 분 성함">
+        <div class="help">받는 분과 같으면 같은 이름을 적어주세요.</div>
+      </div>
+      <div class="field">
+        <label for="memo">요청사항 <span style="font-weight:400;color:var(--muted)">(선택)</span></label>
+        <input id="memo" name="memo" placeholder="예: 경비실에 맡겨주세요">
+      </div>
+
+      <div>
+        <div class="preview-head">
+          <span>보낼 문자 미리보기</span>
+          <button type="button" class="linkish" id="copyMsg">문자 내용 복사</button>
+        </div>
+        <div class="preview" id="preview" aria-live="polite"></div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="sendSms">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        문자로 주문 보내기
+      </button>
+      <div class="btn-row">
+        <a class="btn btn-secondary" href="tel:010-4946-3194">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>
+          전화로 주문
+        </a>
+        <button type="button" class="btn btn-ghost" id="copyMsg2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          카톡으로 보내기
+        </button>
+      </div>
+      <p class="hint" style="margin-top:0">카톡으로 보내실 분은 “카톡으로 보내기”를 누르면 문자 내용이 복사돼요. 카톡 대화창에 붙여넣기 하시면 됩니다.</p>
+    </form>
+  </section>
+
+  <!-- ===== PAY ===== -->
+  <section class="block" id="pay">
+    <h2 class="sec display">입금 안내</h2>
+    <p class="sec-sub">주문 문자 보내신 뒤 아래 계좌로 입금해 주세요.</p>
+    <div class="pay">
+      <dl class="kv">
+        <dt>은행</dt><dd>우리은행</dd>
+        <dt>계좌번호</dt><dd class="big num" id="acct">1002-763-581070</dd>
+        <dt>예금주</dt><dd>이수연</dd>
+        <dt>문의</dt><dd class="num">010-4946-3194 (이수연)</dd>
+      </dl>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="copyAcct">계좌번호 복사</button>
+        <a class="btn btn-secondary" href="tel:010-4946-3194">전화 걸기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHIPPING NOTICE ===== -->
+  <section class="block" id="shipinfo">
+    <h2 class="sec display">배송 &amp; 포장 안내</h2>
+    <p class="sec-sub">받아보시기 전에 알아두시면 좋아요.</p>
+    <ul class="notice">
+      <li><b>우체국 택배로 보내드립니다.</b>전국 어디든 배송 가능합니다.</li>
+      <li><b>4kg는 한 박스로, 2kg 여러 박스는 2박스씩 묶어서 보내드려요.</b>포도가 눌리지 않도록 단단히 포장합니다.</li>
+      <li><b>겉포장이 조금 투박할 수 있습니다.</b>운송 중 충격으로 알이 떨어지는 것을 막기 위해 겉을 두껍게 감싸다 보니 그렇습니다.</li>
+      <li><b>4kg 박스는 다섯 송이, 2kg 박스는 세 송이입니다.</b>송이를 담아 중량을 맞춰 보내드립니다.</li>
+      <li><b>당도 16브릭스 이상만 보내드립니다.</b>당도계로 확인해 기준을 넘긴 포도만 골라 수확합니다.</li>
+    </ul>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="block" id="process">
+    <h2 class="sec display">생산부터 포장까지, 직접 합니다!</h2>
+    <p class="sec-sub">네 단계 모두 부모님 손을 거칩니다.</p>
+    <div class="process">
+      <figure><div class="shot"><img src="../img/step1.jpg" alt="포도밭에서 직접 재배" loading="lazy"><span class="n">1</span></div><figcaption><b>직접 재배</b>자연을 담아 정성껏 키웁니다.</figcaption></figure>
+      <figure><div class="shot"><img src="../img/step2.jpg" alt="당도계로 당도 확인" loading="lazy"><span class="n">2</span></div><figcaption><b>당도 체크</b>당도계로 확인해 16브릭스 이상인 포도만 수확.</figcaption></figure>
+      <figure><div class="shot"><img src="../img/step3.jpg" alt="수확한 포도 선별" loading="lazy"><span class="n">3</span></div><figcaption><b>수확 &amp; 선별</b>꼼꼼하게 선별하여 최상의 포도만 골라냅니다.</figcaption></figure>
+      <figure><div class="shot"><img src="../img/step4.jpg" alt="완충 포장된 샤인머스켓" loading="lazy"><span class="n">4</span></div><figcaption><b>포장</b>파손을 막기 위한 꼼꼼한 포장입니다.</figcaption></figure>
+    </div>
+    <div class="gift" style="margin-top:18px">
+      <img src="../img/gift.jpg" alt="접시에 담긴 샤인머스켓" loading="lazy">
+      <div>
+        <p>가족들과 드시기에도 좋고, 부모님이나 지인분들께 선물하시기에도 좋습니다.</p>
+        <div class="tags"><span>선물용 추천</span><span>온가족 만족</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="block faq" id="faq">
+    <h2 class="sec display">자주 묻는 질문</h2>
+    <p class="sec-sub">궁금한 점은 언제든 연락주세요 :)</p>
+    <details>
+      <summary>언제 도착하나요?</summary>
+      <p>주문과 입금이 확인되면 당일 수확해서 택배로 보내드려요. 보통 발송 다음 날에서 이틀 안에 도착합니다.</p>
+    </details>
+    <details>
+      <summary>여러 곳으로 나눠 보낼 수 있나요?</summary>
+      <p>네, 가능해요. 다만 배송지가 다르면 택배비가 각각 발생합니다. 주소를 문자에 모두 적어 주시면 택배비를 안내드릴게요.</p>
+    </details>
+    <details>
+      <summary>4kg와 2kg 중 뭘 고를까요?</summary>
+      <p>가족이 함께 드시거나 선물용이면 4kg 실속(무료배송)이 가장 알뜰합니다. 2kg 두 박스보다 4kg 한 박스가 배송비만큼 더 저렴합니다. 맛보기나 1~2인 가구는 2kg가 적당합니다.</p>
+    </details>
+    <details>
+      <summary>한 박스에 몇 송이 들어가나요?</summary>
+      <p>4kg 박스는 다섯 송이, 2kg 박스는 세 송이입니다. 송이를 담아 중량을 맞춰 보내드립니다.</p>
+    </details>
+    <details>
+      <summary>당도는 어느 정도인가요?</summary>
+      <p>당도계로 확인해 16브릭스 이상인 포도만 골라 수확합니다. 기준을 넘기지 못한 포도는 보내드리지 않습니다.</p>
+    </details>
+    <details>
+      <summary>포장이 투박해 보이는데 괜찮나요?</summary>
+      <p>운송 중 충격으로 알이 떨어지지 않도록 겉을 두껍게 감싸서 그렇습니다. 2kg를 여러 박스 주문하시면 두 박스씩 묶어서 보내드립니다.</p>
+    </details>
+    <details>
+      <summary>제주도나 섬 지역도 배송되나요?</summary>
+      <p>네, 우체국 택배로 전국 어디든 배송 가능합니다.</p>
+    </details>
+  </section>
+
+  <footer>
+    직접 재배하고 직접 확인해서 보내드리는 만큼, 맛있는 포도로 보내드릴게요.
+    <b>많은 관심 부탁드립니다! 감사합니다 :)</b>
+  </footer>
+</div>
+
+<!-- ===== STICKY BAR ===== -->
+<div class="bar">
+  <div class="bar-inner">
+    <div class="bar-sum num"><small id="barLabel">4kg 1박스 · 배송비 포함</small><b id="barTotal">27,000원</b></div>
+    <a class="btn btn-primary" href="#order" id="barBtn">주문하기</a>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  // ====== 설정 (여기만 바꾸면 됩니다) ======
+  var PHONE   = '010-4946-3194';
+  var SELLER  = '이수연';
+  var BANK    = '우리은행 1002-763-581070 (예금주 이수연)';
+  var P4 = 27000;   // 4kg 실속 (무료배송)
+  var P2 = 12000;   // 2kg 가정용
+  var MAX_QTY = 10;
+  function ship2(n){            // 2kg 박스 택배비: 1박스 3,500 / 2~3박스 4,500 / 4박스+ 5,500
+    if(n <= 0) return 0;
+    if(n === 1) return 3500;
+    if(n <= 3) return 4500;
+    return 5500;
+  }
+  // ========================================
+
+  var q4 = 1, q2 = 0;
+  var $ = function(id){ return document.getElementById(id); };
+  var won = function(n){ return n.toLocaleString('ko-KR') + '원'; };
+
+  function calc(){
+    var g4 = P4 * q4, g2 = P2 * q2, fee = ship2(q2), total = g4 + g2 + fee;
+    $('qty4').textContent = q4;
+    $('qty2').textContent = q2;
+    $('c4').textContent = q4; $('g4').textContent = won(g4);
+    $('c2').textContent = q2; $('g2').textContent = won(g2);
+    $('shipFee').textContent = won(fee);
+    $('row4').hidden   = q4 <= 0;
+    $('row2').hidden   = q2 <= 0;
+    $('rowShip').hidden = q2 <= 0;
+    $('total').innerHTML = total.toLocaleString('ko-KR') + '<small>원</small>';
+    var parts = [];
+    if(q4 > 0) parts.push('4kg ' + q4 + '박스');
+    if(q2 > 0) parts.push('2kg ' + q2 + '박스');
+    $('barLabel').textContent = (parts.join(' + ') || '수량을 선택하세요') + (parts.length ? ' · 배송비 포함' : '');
+    $('barTotal').textContent = won(total);
+    $('minus4').disabled = q4 <= 0; $('plus4').disabled = q4 >= MAX_QTY;
+    $('minus2').disabled = q2 <= 0; $('plus2').disabled = q2 >= MAX_QTY;
+    $('calcHint').textContent = q2 >= 2
+      ? '2kg 2박스는 4kg 1박스(무료배송)로 주문하시면 더 저렴해요.'
+      : '4kg 한 박스는 배송비가 포함되어 있어요.';
+    renderPreview();
+  }
+
+  function val(id){ return ($(id).value || '').trim(); }
+
+  function message(){
+    var g4 = P4 * q4, g2 = P2 * q2, fee = ship2(q2), total = g4 + g2 + fee;
+    var items = [];
+    if(q4 > 0) items.push('4kg 실속 ' + q4 + '박스');
+    if(q2 > 0) items.push('2kg 가정용 ' + q2 + '박스');
+    var bd = [];
+    if(q4 > 0) bd.push('4kg ' + won(g4));
+    if(q2 > 0) bd.push('2kg ' + won(g2));
+    if(fee > 0) bd.push('택배 ' + won(fee));
+    var lines = [
+      '[샤인머스켓 주문]',
+      '받는 분: ' + (val('name') || '(성함)'),
+      '주소: ' + (val('addr') || '(주소)'),
+      '연락처: ' + (val('phone') || '(연락처)'),
+      '주문: ' + (items.join(' + ') || '(수량)'),
+      '입금자명: ' + (val('payer') || '(입금자명)'),
+      '입금 예정 금액: ' + won(total) + ' (' + bd.join(' + ') + ')'
+    ];
+    if(val('memo')) lines.push('요청사항: ' + val('memo'));
+    return lines.join('\n');
+  }
+
+  function renderPreview(){ $('preview').textContent = message(); }
+
+  function validate(){
+    var ok = true, first = null;
+    if(q4 <= 0 && q2 <= 0){ toast('수량을 1박스 이상 선택해 주세요'); return false; }
+    ['name','addr','phone','payer'].forEach(function(k){
+      var f = $(k), wrap = f.closest('.field');
+      var bad = !val(k);
+      wrap.classList.toggle('invalid', bad);
+      if(bad){ ok = false; if(!first) first = f; }
+    });
+    if(!ok){ first.focus(); toast('빨간 칸을 채워주세요'); }
+    return ok;
+  }
+
+  function smsHref(body){
+    var ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    return 'sms:' + PHONE.replace(/-/g,'') + (ios ? '&' : '?') + 'body=' + encodeURIComponent(body);
+  }
+
+  function copy(text, done){
+    function ok(){ toast(done); }
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{ document.execCommand('copy'); ok(); }catch(e){ toast('복사가 안 돼요. 길게 눌러 복사해 주세요'); }
+      document.body.removeChild(ta);
+    }
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(text).then(ok, fallback);
+    } else fallback();
+  }
+
+  var toastTimer;
+  function toast(msg){
+    var t = $('toast'); t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+  }
+
+  // events
+  $('minus4').addEventListener('click', function(){ if(q4>0){ q4--; calc(); } });
+  $('plus4').addEventListener('click', function(){ if(q4<MAX_QTY){ q4++; calc(); } });
+  $('minus2').addEventListener('click', function(){ if(q2>0){ q2--; calc(); } });
+  $('plus2').addEventListener('click', function(){ if(q2<MAX_QTY){ q2++; calc(); } });
+  ['name','addr','phone','payer','memo'].forEach(function(k){
+    $(k).addEventListener('input', function(){
+      $(k).closest('.field').classList.remove('invalid');
+      renderPreview();
+    });
+  });
+  $('orderForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!validate()) return;
+    window.location.href = smsHref(message());
+    // 데스크톱 등 문자 앱이 없는 환경 대비
+    setTimeout(function(){ copy(message(), '문자 내용을 복사했어요. ' + PHONE + ' 로 보내주세요'); }, 800);
+  });
+  $('copyMsg').addEventListener('click', function(){ copy(message(), '문자 내용을 복사했어요'); });
+  $('copyMsg2').addEventListener('click', function(){
+    if(!validate()) return;
+    copy(message(), '복사 완료! 카톡 대화창에 붙여넣기 하세요');
+  });
+  $('copyAcct').addEventListener('click', function(){ copy('1002-763-581070', '계좌번호를 복사했어요 (우리은행 · 이수연)'); });
+
+  // 주문 섹션이 보이면 하단 바 버튼을 "문자 보내기"로
+  var barBtn = $('barBtn');
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(en.isIntersecting){
+          barBtn.textContent = '문자로 주문 보내기';
+          barBtn.setAttribute('href','#sendSms');
+          barBtn.onclick = function(ev){ ev.preventDefault(); $('sendSms').click(); };
+        } else {
+          barBtn.textContent = '주문하기';
+          barBtn.setAttribute('href','#order');
+          barBtn.onclick = null;
+        }
+      });
+    }, {threshold:.25}).observe($('orderForm'));
+  }
+
+  calc();
+})();
+</script>
+</body>
+</html>
