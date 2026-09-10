@@ -294,7 +294,7 @@
         <div class="prod-price"><span class="amount num">28,000<small>원</small></span><span class="free">배송비 포함</span></div>
       </div>
       <div class="prod">
-        <div class="prod-name">2kg 가정용 <small>3수 · 최대 3박스</small></div>
+        <div class="prod-name">2kg 가정용 <small>3수 · 최대 4박스</small></div>
         <div class="prod-price"><span class="amount num">15,000<small>원</small></span><span class="free">배송비 포함</span></div>
       </div>
     </div>
@@ -303,7 +303,7 @@
 
     <div class="ship">
       <h3 class="num">배송 안내 <span>우체국 택배</span></h3>
-      <p>※ 모든 상품은 <strong>배송비가 가격에 포함</strong>되어 있습니다. 표시된 금액만 입금하시면 됩니다.<br>※ 2kg는 3박스까지 주문할 수 있어요. 더 필요하시면 4kg를 이용해 주세요.<br>※ 여러 곳으로 보내실 땐 배송지마다 따로 주문해 주세요. <strong>전국 배송 가능</strong>합니다.</p>
+      <p>※ 모든 상품은 <strong>배송비가 가격에 포함</strong>되어 있습니다. 표시된 금액만 입금하시면 됩니다.<br>※ 2kg는 4박스까지 주문할 수 있어요. 그보다 많으면 4kg가 더 알뜰합니다.<br>※ 여러 곳으로 보내실 땐 배송지마다 따로 주문해 주세요. <strong>전국 배송 가능</strong>합니다.</p>
     </div>
   </section>
 
@@ -333,7 +333,7 @@
         </div>
       </div>
       <div class="qty">
-        <div class="qty-label">2kg 가정용<small>3수 · 15,000원 · 최대 3박스</small></div>
+        <div class="qty-label">2kg 가정용<small>3수 · 15,000원 · 최대 4박스</small></div>
         <div class="stepper" role="group" aria-label="2kg 수량 선택">
           <button type="button" id="minus2" aria-label="2kg 수량 줄이기">−</button>
           <output id="qty2" aria-live="polite">0</output>
@@ -472,7 +472,7 @@
     </details>
     <details>
       <summary>4kg와 2kg 중 뭘 고를까요?</summary>
-      <p>가족이 함께 드시거나 선물용이면 4kg가 알뜰합니다. 2kg 두 박스(30,000원)보다 4kg 한 박스(28,000원)가 더 싸고 포장도 간편합니다. 맛보기나 1~2인 가구는 2kg가 좋습니다. 2kg는 최대 3박스까지 주문할 수 있어요.</p>
+      <p>가족이 함께 드시거나 선물용이면 4kg가 알뜰합니다. 2kg 두 박스(30,000원)보다 4kg 한 박스(28,000원)가 더 싸고 포장도 간편합니다. 맛보기나 1~2인 가구는 2kg가 좋습니다. 2kg는 최대 4박스까지 주문할 수 있어요.</p>
     </details>
     <details>
       <summary>한 박스에 몇 송이 들어가나요?</summary>
@@ -520,7 +520,7 @@
   var P4 = 28000;   // 4kg 실속 (배송비 포함)
   var P2 = 15000;   // 2kg 가정용 (배송비 포함)
   var MAX_QTY = 10;
-  var MAX_2 = 3;    // 2kg는 3박스까지 (그 이상은 4kg로 유도)
+  var MAX_2 = 4;    // 2kg는 4박스까지 (그 이상은 4kg가 더 알뜰)
   // ========================================
 
   var q4 = 1, q2 = 0;
@@ -544,7 +544,7 @@
     $('minus4').disabled = q4 <= 0; $('plus4').disabled = q4 >= MAX_QTY;
     $('minus2').disabled = q2 <= 0; $('plus2').disabled = q2 >= MAX_2;
     $('calcHint').textContent = q2 >= MAX_2
-      ? '2kg는 3박스까지예요. 더 필요하시면 4kg를 이용해 주세요.'
+      ? '2kg는 4박스까지예요. 더 필요하시면 4kg가 더 알뜰합니다.'
       : '표시된 금액이 배송비까지 포함한 최종 금액이에요.';
     renderPreview();
   }
